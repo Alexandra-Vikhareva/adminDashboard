@@ -1,0 +1,39 @@
+.container,
+.header,
+.content,
+.projects,
+.announcements,
+.trending {
+    display: grid;
+}
+
+.container{
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.nav{
+    grid-row: 1 / -1;
+}
+
+.header{
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content{
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cards{
+    grid-row: 1 / -1;
+}
+
+.projects{
+    grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+}
+
+.projects > * {
+    height: 400px;
+}
