@@ -13,47 +13,75 @@
                 <p>Dashboard</p>
             </div>
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li>
+                    <img src="./images/house-blank.svg" alt="home icon" width="30rem" height="30rem">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <img src="./images/network-user.svg" alt="user icon" width="30rem" height="30rem">
+                    <a href="">Profile</a>
+                </li>
+                <li>
+                    <img src="./images/envelope-dot.svg" alt="messages icon" width="30rem" height="30rem">
+                    <a href="">Messages</a>
+                </li>
+                <li>
+                    <img src="./images/time-past.svg" alt="history icon" width="30rem" height="30rem">
+                    <a href="">History</a>
+                </li>
+                <li>
+                    <img src="./images/to-do.svg" alt="tasks icon" width="30rem" height="30rem">
+                    <a href="">Tasks</a>
+                </li>
+                <li>
+                    <img src="./images/network-user.svg" alt="Communities icon" width="30rem" height="30rem">
+                    <a href="">Communities</a>
+                </li>
             </ul>
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li>
+                    <img src="./images/settings.svg" alt="Settings icon" width="30rem" height="30rem">
+                    <a href="">Settings</a>
+                </li>
+                <li>
+                    <img src="./images/support.svg" alt="Support icon" width="30rem" height="30rem">
+                    <a href="">Support</a>
+                </li>
+                <li>
+                    <img src="./images/privacy.svg" alt="Privacy icon" width="30rem" height="30rem">
+                    <a href="">Privacy</a>
+                </li>
             </ul>
         </div>
         <div class="header">
-            <div class="search">
+            
                 <label for="search">
-                    <img src="./images/magnify.svg" alt="Search image" width="20rem">
+                    <img src="./images/magnify.svg" alt="Search image" width="30rem" height="30rem">
                     <input type="text" id="search">
                 </label>
                     
-            </div>
+            
             <div class="profile">
-                        <img src="./images/bell-outline.svg" alt="Notification image" width="20rem">
-                        <img src="./images/Bacchus.jpg" alt="user photo" height="100rem">
+                        <img src="./images/bell-outline.svg" alt="Notification image" width="30rem" height="30rem">
+                        <div class="user"><img src="./images/Bacchus.jpg" alt="user photo" class="userPhoto"></div>
                         <p>Alex Bacchus</p>
             </div>
             <div class="status">
-                <img src="./images/Bacchus.jpg" alt="user photo" height="100rem">
-                <p>Ave,</p> 
-                <span class="userName">Alex Bacchus(@Boomer)</span>
+                <div class="user"><img src="./images/Bacchus.jpg" alt="user photo" class="userPhoto" ></div>
+                <div class="greeting">
+                    <p>Ave,</p>
+                    <span class="userName">Alex Bacchus(@Boomer)</span>
+                </div>
             </div>
-            <div class="btns">
                 <ul>
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
+                    <li><button>New</button></li>
+                    <li><button>Upload</button></li>
+                    <li><button>Share</button></li>
                 </ul>
-            </div>
         </div>
         <div class="content">
             <div class="cards">
+                <h5>Your Projects</h5>
                 <ul class="projects">
                     <li> 
                         <span class="projectName">Doomsday Vault</span> 
@@ -61,27 +89,29 @@
                     </li>
                     <li>
                         <span class="projectName">Ocean Census</span>
-                        "Ocean Census" is a large-scale study that has discovered over 12,000 new species of marine organisms.
+                        <p>"Ocean Census" is a large-scale study that has discovered over 12,000 new species of marine organisms.</p>
                     </li>
                     <li>
                         <span class="projectName">The International Space Station</span>
-                        The International Space Station (ISS) is an orbital scientific laboratory that brings together scientists from different countries to conduct research in conditions of microgravity and vacuum.
+                        <p>The International Space Station (ISS) is an orbital scientific laboratory that brings together scientists from different countries to conduct research in conditions of microgravity and vacuum.</p>
                     </li>
                     <li>
                         <span class="projectName">Unmanned expedition to comet Churyumov-Gerasimenko</span>
-                        Unmanned expedition to comet Churyumov-Gerasimenko is a mission of the space probe "Rosetta", which successfully landed on the comet and collected scientific data.
+                        <p>Unmanned expedition to comet Churyumov-Gerasimenko is a mission of the space probe "Rosetta", which successfully landed on the comet and collected scientific data.</p>
                     </li>
                     <li>
                         <span class="projectName">Human Genome Project</span>
-                        The "Human Genome Project" is a large-scale study of the human genome aimed at fully deciphering 20–25 thousand genes and developing more effective medications.
+                        <p>The "Human Genome Project" is a large-scale study of the human genome aimed at fully deciphering 20–25 thousand genes and developing more effective medications.</p>
                     </li>
                     <li>
                         <span class="projectName">Gene Pool</span>
-                        Project "Gene Pool" involves creating a repository with DNA samples from various animal and plant species to preserve genetic diversity and the possibility of restoring lost species in case of catastrophes.
+                        <p>Project "Gene Pool" involves creating a repository with DNA samples from various animal and plant species to preserve genetic diversity and the possibility of restoring lost species in case of catastrophes.</p>
                     </li>
                 </ul>
             </div>
             <div class="announcements">
+                <h5>Announcements</h5>
+
                 <ul>
                     <li>Adding new sections or categories to the website will help users find the information they need faster and enhance the ease of use of the site. You can add sections such as 'News', 'Blog', 'About Us', 'Contacts', and others, depending on the specifics of your site.</li>
                     <li>Improving the usability of the site will make it more convenient for users. Conducting an analysis of user behavior on the site, identifying problems and difficulties they encounter, and making corresponding changes can be done. For example, you can add a navigation menu, optimize the site structure, simplify the registration and authentication process, and add the option to leave reviews and comments.</li>
@@ -89,14 +119,30 @@
                 </ul>
             </div>
             <div class="trending">
+                <h5>Trending</h5>
+
                 <ul>
-                    <li>Giggles</li>
-                    <li>Nugget</li>
-                    <li>Teacup</li>
-                    <li>Smarty</li>
+                    <li>
+                        <div class="user"><img src="./images/av1.jpg" alt="userPhoto" class="userPhoto"></div>
+                        <a href="">@Giggles</a>
+                    </li>
+                    <li>
+                        <div class="user"><img src="./images/av2.jpg" alt="userPhoto" class="userPhoto"></div>
+                        <a href="">@Nugget</a>
+                    </li>
+                    <li>
+                        <div class="user"><img src="./images/av3.jpg" alt="userPhoto" class="userPhoto"></div>
+                        <a href="">@Teacup</a>
+                    </li>
+                    <li>
+                        <div class="user"><img src="./images/av4.jpg" alt="userPhoto" class="userPhoto"></div>
+                        <a href="">@Smarty</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <div class="footer">Created by <a href="https://github.com/Alexandra-Vikhareva">Vikhareva Alexandra</a> for <a href="https://www.theodinproject.com/support_us">TOP</a></div>
 </body>
 </html>

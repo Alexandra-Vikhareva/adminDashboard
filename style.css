@@ -1,3 +1,63 @@
+@font-face {
+    font-family: 'mexcellent';
+    src: url(./fonts/mexcellent\ rg.woff2);
+}
+
+@font-face {
+    font-family: 'MPULS';
+    src: url(./fonts/MPLUSRounded1c-Regular.woff2);
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'mexcellent';
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+body{
+    background-color: #e7d6b4;
+    font-size: 20px;
+    font-family: 'MPULS';
+}
+.search img{
+    fill:#c77974;
+}
+
 .container,
 .header,
 .content,
@@ -8,17 +68,101 @@
 }
 
 .container{
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
+    color: #4b3535;
 }
 
 .nav{
     grid-row: 1 / -1;
+    background-color: #5758a6;
+    color: #e7c58a;
+}
+
+.nav a{
+    color: #e7c58a;
+}
+
+.nav li{
+    display: flex;
+    align-items: center;
+}
+
+.nav li:hover{
+    text-shadow: 0 0 5px#c77974;
+}
+
+.nav li img{
+    margin: 10px;
 }
 
 .header{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: #86b05d;
+    padding: 0 3rem;
+}
+
+.header > *{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile{
+    justify-content: flex-end;
+}
+
+.status{
+    justify-content: flex-start;
+}
+
+.status p{
+    font-family: 'mexcellent';
+    font-size: 3rem;
+    color: #5758a6;
+}
+
+.status span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.header button{
+    background-color: #5758a6;
+    color: #e7c58a;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+.header button:hover{
+    box-shadow: 0 0 10px #4b3535;
+}
+
+.user{
+    object-fit: cover;
+    width: 100px; 
+    height: 100px;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.userPhoto{
+    height: 100%;
+    width: auto;
+}
+
+input{
+    background-color: #e7d6b4;
+    border: none;
+    border-radius: 10px;
+    height: 2rem;
+    width: 40rem;
 }
 
 .content{
@@ -26,14 +170,129 @@
     grid-template-rows: 1fr 1fr;
 }
 
+h5{
+    font-size: 2rem;
+    font-family: 'mexcellent';
+    color: #5758a6;
+    margin: 20px 50px;
+}
+
 .cards{
     grid-row: 1 / -1;
 }
 
 .projects{
-    grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    gap: 25px;
+    padding: 1rem;
 }
 
 .projects > * {
     height: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left:  10px solid #5758a6;
+}
+
+.projects > *:hover {
+    position: relative;
+    top: -10px;
+    box-shadow: 0 0 10px#5758a6;
+}
+
+.projectName{
+    font-family: 'mexcellent';
+    color: #5758a6;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    margin: 40px;
+    padding: 40px;
+}
+
+.projects li{
+    background-color: #e7c58a;
+}
+
+.announcements > ul,
+.trending > ul {
+    background-color: #c77974;
+    border-radius: 10px;
+}
+
+.announcements > ul li{
+    border-bottom: 3px solid #4b3535;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.announcements > ul li:last-child{
+    border-bottom: none;
+}
+
+.announcements > ul li:hover{
+    position: relative;
+    right: -10px;
+    text-shadow: 0 0 10px #e7d6b4;
+}
+
+.announcements > ul li:hover::before{
+    content: 'Read more → ';
+    background-color: #4b3535;
+    color: #e7d6b4;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.announcements,
+.trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements h5,
+.trending h5{
+    font-size: 2rem;
+    font-family: 'mexcellent';
+    color: #c77974;
+}
+
+.announcements{
+    margin-top: 50px;
+}
+
+.status,
+.profile{
+    display: flex;
+}
+
+.announcements a,
+.trending a{
+    color: #4b3535;
+}
+
+.trending li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.trending li > *{
+    margin: 10px;
+}
+
+.trending li:hover{
+    text-shadow: 0 0 10px #e7d6b4;
+    position: relative;
+    left: -10px;
+}
+
+.footer{
+    margin-top: auto;
+    text-align: center;
+    background-color: #86b05d;
 }
