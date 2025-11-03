@@ -21,13 +21,13 @@ Dashboard-панель с использованием CSS Grid для слож�
 - Иконки (SVG/Material Icons)
 
 ## 📁 Структура
-dashboard/
-├── index.html
-├── styles.css
-├── images/
-│ └── icons/
-├── fonts/
-│ └── fonts/
+dashboard/ \
+├── index.html \
+├── styles.css \ 
+├── images/ \
+│ └── icons/ \
+├── fonts/ \ 
+│ └── fonts/ \
 └── README.md
 
 ## 🎯 Особенности
